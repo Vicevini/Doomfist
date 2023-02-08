@@ -1,5 +1,12 @@
+const fs = require('fs')
+
 function getLivros(req, res) {
-    res.send('Consulta realizada com sucesso!')
+    try {
+        const livros = fs.readFileSync('livros.json')
+        res.send(JSON.parse(livros))
+    } catch (error) {
+        res.send('Erro ao ler o arquivo')
+    }
 }
 
 function postLivros(req, res) {
