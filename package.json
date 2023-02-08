@@ -1,0 +1,23 @@
+{
+  "name": "@itfinanzero/doomfist",
+  "version": "1.0.0",
+  "description": "NodeJS API for library management.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vicevini/Doomfist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vicevini/Doomfist/issues"
+  },
+  "homepage": "https://github.com/Vicevini/Doomfist#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
