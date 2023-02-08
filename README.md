@@ -13,5 +13,6 @@ A simple API for library management.
 - NodeJS
 - Express
 - Routes - URL, methods and functions
+- HTTP Status Codes
 - Nodemon
 - Modules
