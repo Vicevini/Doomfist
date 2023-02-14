@@ -4,4 +4,10 @@ function getTodosLivros() {
     return JSON.parse(fs.readFileSync('./livros.json'))
 }
 
-module.exports = { getTodosLivros }
+function getLivroPorID(id) {
+    const livros = JSON.parse(fs.readFileSync('./livros.json'))
+    const livroFiltrado = livros.filter(livro => livro.id === id)
+    return livroFiltrado
+}
+
+module.exports = { getTodosLivros, getLivroPorID }

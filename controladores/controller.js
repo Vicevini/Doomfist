@@ -1,9 +1,19 @@
-const { getTodosLivros } = require('../services/services')
+const { getTodosLivros, getLivroPorID } = require('../services/services')
 
 function getLivros(req, res) {
     try {
         const livros = getTodosLivros()
         res.send(livros)
+    } catch (error) {
+        res.send('Erro ao ler o arquivo')
+    }
+}
+
+function getLivro(req, res) {
+    try {
+        const id = req.params.id
+        const livro = getLivroPorID(id)
+        res.send(livro)
     } catch (error) {
         res.send('Erro ao ler o arquivo')
     }
@@ -21,4 +31,4 @@ function deleteLivros(req, res) {
     res.send('Delete realizado com sucesso!')
 }
 
-module.exports = { getLivros, postLivros, patchLivros, deleteLivros }
+module.exports = { getLivros, postLivros, patchLivros, deleteLivros, getLivro }
