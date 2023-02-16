@@ -10,4 +10,17 @@ function getLivroPorID(id) {
     return livroFiltrado
 }
 
-module.exports = { getTodosLivros, getLivroPorID }
+function getLivroPorCategoria(categoria) {
+    const livros = JSON.parse(fs.readFileSync('./livros.json'))
+    const livroFiltrado = livros.filter(livro => livro.categoria === categoria)
+    return livroFiltrado
+}
+
+function insereLivro(novoLivro) {
+    const livros = JSON.parse(fs.readFileSync('./livros.json'))
+
+    const novaLista = [...livros, novoLivro]
+    fs.writeFileSync('./livros.json', JSON.stringify(novaLista))
+}
+
+module.exports = { getTodosLivros, getLivroPorID, getLivroPorCategoria, insereLivro }

@@ -1,5 +1,1 @@
-[
-  { "id": "1", "titulo": "A Cabana", "categoria": "Suspense" },
-  { "id": "2", "titulo": "Diário de um Banana", "categoria": "Comédia" },
-  { "id": "3", "titulo": "O Senhor dos Anéis", "categoria": "Fantasia" }
-]
+[{"id":"1","titulo":"A Cabana","categoria":"Suspense"},{"id":"2","titulo":"Diário de um Banana","categoria":"Comédia"},{"id":"3","titulo":"O Senhor dos Anéis","categoria":"Fantasia"},{"id":"4","titulo":"O Senhor dos Anéis 2","categoria":"Fantasia"}]
