@@ -21,9 +21,9 @@ function getLivro(req, res) {
 
 function getCategoria(req, res) {
     try {
-        const categoria = req.params.categoria
-        const livro = getLivroPorCategoria(categoria)
-        res.send(livro)
+        const categoriaID = req.params.categoria
+        const categoria = getLivroPorCategoria(categoriaID)
+        res.send(categoria)
     } catch (error) {
         res.send('Erro ao ler o arquivo')
     }

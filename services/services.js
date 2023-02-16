@@ -12,8 +12,8 @@ function getLivroPorID(id) {
 
 function getLivroPorCategoria(categoria) {
     const livros = JSON.parse(fs.readFileSync('./livros.json'))
-    const livroFiltrado = livros.filter(livro => livro.categoria === categoria)
-    return livroFiltrado
+    const categoriaFiltrada = livros.filter(livro => livro.categoria === categoria)
+    return categoriaFiltrada
 }
 
 function insereLivro(novoLivro) {

@@ -7,7 +7,7 @@ router.get('/', getLivros)
 
 router.get('/:id', getLivro)
 
-router.get('/:categoria', getCategoria)
+router.get('/categoria/:categoria', getCategoria)
 
 router.post('/', postLivro)
 
