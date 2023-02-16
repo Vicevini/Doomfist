@@ -17,4 +17,4 @@ A simple API for library management.
 - Nodemon
 - Modules
 - Manipulating files with fs, using JS
-- How routes is prioritized in Node, example: /:id is prioritized over /:category because of the order of the routes. 
+- How routes is prioritized in Node, example: /:id is prioritized over /:category because of the order of the routes.
