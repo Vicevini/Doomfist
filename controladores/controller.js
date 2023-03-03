@@ -1,4 +1,4 @@
-const { getTodosLivros, getLivroPorID, getLivroPorCategoria, insereLivro } = require('../services/services')
+const { getTodosLivros, getLivroPorID, getLivroPorCategoria, insereLivro, modificaLivro } = require('../services/services')
 
 function getLivros(req, res) {
     try {
@@ -43,9 +43,14 @@ function postLivro(req, res) {
 
 function patchLivros(req, res) {
     try {
+        const id = req.params.id
+        const body = req.body
+        modificaLivro(body, id)
+        res.send('Atualização realizada com sucesso')
 
     } catch (error) {
-        res.send('Erro ao realizar patch')
+        res.status(500)
+        res.send('Erro ao realizar atualização')
     }
 }
 

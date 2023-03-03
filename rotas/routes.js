@@ -11,7 +11,7 @@ router.get('/categoria/:categoria', getCategoria)
 
 router.post('/', postLivro)
 
-router.patch('/', patchLivros)
+router.patch('/:id', patchLivros)
 
 router.delete('/', deleteLivros)
 
