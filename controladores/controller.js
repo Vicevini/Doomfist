@@ -54,7 +54,6 @@ function postLivro(req, res) {
             res.status(422);
             res.send("Não foi possível publicar o livro");
         }
-
     } catch (error) {
         res.status(500);
         res.send("Erro ao publicar livro");
